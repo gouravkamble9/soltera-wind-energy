@@ -28,7 +28,7 @@ export default function Hero() {
         ref={titleRef}
         className="relative z-20 px-0 pt-[18vh] sm:pt-[22vh] md:pt-[26vh]"
       >
-        <h1 className="text-white font-display text-[14.5vw] sm:text-[14vw] md:text-[13.5vw] lg:text-[13vw] font-medium leading-[0.85] tracking-[-0.04em] text-center select-none w-full">
+        <h1 className="text-white font-display text-[14.5vw] sm:text-[14vw] md:text-[13.5vw] lg:text-[16vw] font-medium leading-[0.85] tracking-[-0.04em] text-center select-none w-full">
           {heroWord.split("").map((letter, i) => (
             <motion.span
               key={i}

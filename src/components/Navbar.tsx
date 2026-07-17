@@ -67,9 +67,9 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className={`text-xs font-medium tracking-wide transition-colors duration-200 ${
+                className={`text-sm font-medium tracking-wide transition-colors duration-200 ${
                   pastHero
-                    ? "text-gray-500 hover:text-black"
+                    ? "text-gray-800 hover:text-black"
                     : "text-white hover:text-white"
                 }`}
               >
