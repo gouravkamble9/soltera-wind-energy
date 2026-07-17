@@ -10,7 +10,6 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer
-      id="contact"
       className="bg-black text-white pt-24 pb-8 px-4 sm:px-6 lg:px-12"
     >
       <div className="max-w-[1400px] mx-auto">
