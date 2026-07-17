@@ -52,7 +52,7 @@ export default function Contact() {
       </div>
 
       <div className="relative z-10 max-w-[1400px] mx-auto">
-        <div className="lg:grid lg:grid-cols-2 gap-12 lg:gap-20">
+        <div className="lg:grid lg:grid-cols-2 gap-12 lg:gap-20 lg:items-end">
           {/* Left — heading + contact details */}
           <div>
             <FadeInUp>
@@ -106,8 +106,8 @@ export default function Contact() {
 
           {/* Right — form card */}
           <FadeInUp delay={0.15}>
-            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-[0_4px_30px_rgba(0,0,0,0.06)] mt-10 lg:mt-0">
-              <div className="flex items-center justify-between">
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-[0_4px_30px_rgba(0,0,0,0.06)] mt-10 lg:mt-auto">
+              <div className="flex justify-between">
                 <p className="text-black text-[11px] font-bold uppercase tracking-[0.15em]">
                   SEND US A MESSAGE
                 </p>

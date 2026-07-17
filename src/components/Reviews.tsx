@@ -53,7 +53,7 @@ export default function Reviews() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1920&q=80&auto=format"
+          src="https://cdn.pixabay.com/photo/2019/07/15/15/03/sunflowers-4339580_1280.jpg"
           alt="Wind turbine against sky"
           className="w-full h-full object-cover"
         />
