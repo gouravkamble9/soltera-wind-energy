@@ -63,10 +63,10 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className={`text-[11px] font-medium tracking-wide transition-colors duration-200 ${
+                className={`text-xs font-medium tracking-wide transition-colors duration-200 ${
                   scrolled
                     ? "text-gray-500 hover:text-black"
-                    : "text-white/60 hover:text-white"
+                    : "text-white hover:text-white"
                 }`}
               >
                 {link.label}

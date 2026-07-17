@@ -49,9 +49,7 @@ export default function Performance() {
           className="text-black text-xl sm:text-2xl md:text-3xl font-medium leading-[1.25] max-w-3xl mt-6"
           staggerDelay={0.04}
         >
-          Reduce external reliance and secure stable energy. Our solutions
-          deliver field-tested durability, efficiency, and long-term performance
-          worldwide at scale.
+          Reduce external reliance and secure stable energy. Our solutions deliver field-tested durability, efficiency, and long-term performance worldwide at scale.
         </WordsPullUp>
 
         <FadeInUp delay={0.2}>

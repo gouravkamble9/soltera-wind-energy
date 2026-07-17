@@ -123,7 +123,7 @@ export default function Hero() {
         >
           <div className="w-full h-12 sm:h-14 md:h-16 rounded-3xl overflow-hidden mb-2.5">
             <img
-              src="https://pixabay.com/images/download/peterdargatz-windmill-50512_640.jpg"
+              src="https://res.cloudinary.com/dyhgopnii/image/upload/v1784261787/peterdargatz-windmill-50512_1280_myerjc.jpg"
               className="w-full h-full object-cover"
             />
           </div>

@@ -17,9 +17,7 @@ export default function HowItWorks() {
           className="text-black text-xl sm:text-2xl md:text-3xl font-medium leading-[1.25] max-w-2xl mt-6"
           staggerDelay={0.04}
         >
-          We deliver a complete process from planning to launch with consistent
-          results. Each solution is designed for efficiency and long-term
-          reliability.
+          We deliver a complete process from planning to launch with consistent results. Each solution is designed for efficiency and long-term reliability.
         </WordsPullUp>
 
         {/* Step card */}

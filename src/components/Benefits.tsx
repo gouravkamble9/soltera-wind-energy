@@ -41,9 +41,7 @@ export default function Benefits() {
               className="text-black text-xl sm:text-2xl md:text-3xl font-medium leading-[1.25]"
               staggerDelay={0.04}
             >
-              Choose us to reduce operational costs and gain energy
-              independence. Trust a partner that can deliver reliable,
-              high-performance solutions.
+              Choose us to reduce operational costs and gain energy independence. Trust a partner that can deliver reliable, high-performance solutions.
             </WordsPullUp>
 
             <FadeInUp delay={0.2}>

@@ -20,7 +20,7 @@ export function WordsPullUp({
   return (
     <p ref={ref} className={className}>
       {words.map((word, i) => (
-        <span key={i} className="inline-block overflow-hidden align-bottom">
+        <span key={i} className="inline-block overflow-hidden align-bottom mr-[0.25em] last:mr-0">
           <motion.span
             className="inline-block"
             initial={{ y: "100%", opacity: 0 }}
@@ -35,7 +35,6 @@ export function WordsPullUp({
           >
             {word}
           </motion.span>
-          {i < words.length - 1 && " "}
         </span>
       ))}
     </p>
