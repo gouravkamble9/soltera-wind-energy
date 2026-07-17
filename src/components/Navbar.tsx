@@ -15,21 +15,25 @@ const navLinks = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [pastHero, setPastHero] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 10);
+      setPastHero(window.scrollY > window.innerHeight * 0.8);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/10 backdrop-blur-sm" : ""}`}>
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between h-16 md:h-20">
         {/* Left */}
         <div className="flex items-center gap-5">
           <button
-            className={scrolled ? "text-black" : "text-white"}
+            className={pastHero ? "text-black" : "text-white"}
             aria-label="Logo"
           >
             <svg
@@ -51,7 +55,7 @@ export default function Navbar() {
           </button>
           <span
             className={`text-xs font-semibold tracking-wide ${
-              scrolled ? "text-black" : "text-white"
+              pastHero ? "text-black" : "text-white"
             }`}
           >
             EN
@@ -64,7 +68,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 className={`text-xs font-medium tracking-wide transition-colors duration-200 ${
-                  scrolled
+                  pastHero
                     ? "text-gray-500 hover:text-black"
                     : "text-white hover:text-white"
                 }`}
@@ -77,7 +81,7 @@ export default function Navbar() {
           {/* Mobile toggle */}
           <button
             className={`lg:hidden ml-1 ${
-              scrolled ? "text-black" : "text-white"
+              pastHero ? "text-black" : "text-white"
             }`}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
